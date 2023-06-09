@@ -124,6 +124,11 @@ func commentsWithDefaults(lines ...string) string {
 func main() {
 	flag.Parse()
 
+	if *args.Version {
+		fmt.Println(pwl.Version)
+		return
+	}
+
 	cfg := defaults
 	err := cfg.Load()
 	if err != nil {
@@ -216,9 +221,6 @@ func main() {
 			cfg.Time = *args.Time
 		case "vi-mode":
 			cfg.ViMode = *args.ViMode
-		case "version":
-			fmt.Println(Version)
-			return
 		}
 	})
 

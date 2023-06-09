@@ -147,7 +147,7 @@ var defaults = Config{
 			EvalPromptRightSuffix: `"`,
 		},
 		"bare": {
-			ColorTemplate: "%s",
+			ColorTemplate:    "%s",
 			RootIndicator:    "$",
 			EscapedBackslash: `\`,
 			EscapedBacktick:  "`",
@@ -1681,7 +1681,6 @@ var defaults = Config{
 	},
 	Time:   "15:04:05",
 	ViMode: "",
-	Version: false,
 }
 
 const (

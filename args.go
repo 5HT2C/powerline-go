@@ -229,6 +229,6 @@ var args = arguments{
 		comments("The current vi-mode (eg. KEYMAP for zsh) for vi-module module")),
 	Version: flag.Bool(
 		"version",
-		defaults.Version,
-		comments("Print the current version and exit"),
+		false,
+		comments("Print the current version and exit")),
 }

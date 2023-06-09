@@ -1,3 +1,3 @@
-package main
+package powerline
 
 var Version = "development"
