@@ -1681,6 +1681,7 @@ var defaults = Config{
 	},
 	Time:   "15:04:05",
 	ViMode: "",
+	Version: false,
 }
 
 const (
