@@ -216,6 +216,9 @@ func main() {
 			cfg.Time = *args.Time
 		case "vi-mode":
 			cfg.ViMode = *args.ViMode
+		case "version":
+			fmt.Println(Version)
+			return
 		}
 	})
 
